@@ -1,21 +1,12 @@
 import React from 'react'
-import { Image } from '@chakra-ui/react';
-import { ReactNode } from 'react';
 import {
     Box,
     Flex,
     Avatar,
-    Link,
-    Button,
     Menu,
     MenuButton,
     MenuList,
-    MenuItem,
-    MenuDivider,
-    useDisclosure,
-    useColorModeValue,
     Stack,
-    useColorMode,
     Center,
 } from '@chakra-ui/react';
 
@@ -24,7 +15,7 @@ const Navbar = ({ user }) => {
     return (
 
         <Box as={'header'} bg={'black'} position='fixed' width={'100%'} top={'0'}>
-            <Flex  h={'20'} alignItems={'center'} justifyContent={'space-between'} padding={'10'}>
+            <Flex h={'20'} alignItems={'center'} justifyContent={'space-between'} padding={'10'}>
                 <Box textColor={'white'} fontSize={'2xl'} fontWeight={'bold'} >Edvora</Box>
 
                 <Flex alignItems={'center'}>

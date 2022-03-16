@@ -16,7 +16,7 @@ const FilterContent = ({ rideData, onChangeState, onChangeCity }) => {
     }
 
     const changeCity = (data) => {
-         onChangeCity(data.target.value);
+        onChangeCity(data.target.value);
     }
 
     return (
@@ -26,8 +26,8 @@ const FilterContent = ({ rideData, onChangeState, onChangeCity }) => {
                 <Stack spacing={6} marginTop={'5'}>
                     <Select placeholder='State' onChange={changeState}>
                         {rideData.map((data) => {
-                            return (                              
-                                <option key={data.state} value={data.state} >{data.state}</option>                                
+                            return (
+                                <option key={data.state} value={data.state}>{data.state}</option>
                             )
                         })}
                     </Select>
