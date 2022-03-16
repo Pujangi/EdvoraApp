@@ -9,21 +9,16 @@ import { Select } from '@chakra-ui/react'
 
 const FilterContent = ({ rideData, onChangeState, onChangeCity }) => {
     const [state, setState] = useState('');
-    // const [city, setCity] = useState('');
 
     const changeState = (data) => {
         setState(data.target.value);
         onChangeState(data.target.value);
- console.log(data.target.value);
     }
 
     const changeCity = (data) => {
-        // setCity(data.target.value);
          onChangeCity(data.target.value);
-console.log(data.target.value);
     }
 
-    // console.log(state);
     return (
         <Box display={'flex'} margin={'6'} flexDirection={'column'}>
             <PopoverHeader color='#A5A5A5' fontSize={'xl'} >Filter</PopoverHeader>
